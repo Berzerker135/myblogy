@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/Login';
 import BlogPage from './pages/Blog';
+import type { JSX } from "react";
 
 function ProtectedRoute({ children }: { children: JSX.Element }) {
   const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
